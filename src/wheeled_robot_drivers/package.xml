@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>wheeled_robot_drivers</name>
+  <version>0.0.1</version>
+  <description>Fishbot drivers: HDA536T IMU to sensor_msgs/Imu for Nav2.</description>
+  <maintainer email="you@example.com">fishbot</maintainer>
+  <license>MIT</license>
+
+  <!-- ament_python 构建类型 -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <!-- 运行期依赖 -->
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>ament_index_python</exec_depend>
+  <exec_depend>python3-serial</exec_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

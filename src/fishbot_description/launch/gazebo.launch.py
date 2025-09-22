@@ -9,12 +9,14 @@ from launch_ros.substitutions import FindPackageShare
 def generate_launch_description():
     robot_name_in_model = 'fishbot'
     package_name = 'fishbot_description'
-    urdf_name = "fishbot_gazebo.urdf"
+    #urdf_name = "fishbot_gazebo.urdf"
+    urdf_name = "wheeled_gazebo.urdf"
 
     ld = LaunchDescription()
     pkg_share = FindPackageShare(package=package_name).find(package_name) 
     urdf_model_path = os.path.join(pkg_share, f'urdf/{urdf_name}')
-    gazebo_world_path = os.path.join(pkg_share, 'world/fishbot.world')
+    #gazebo_world_path = os.path.join(pkg_share, 'world/fishbot1.world')
+    gazebo_world_path = os.path.join(pkg_share, 'world/empty.world')
 
     # Start Gazebo server
     # start_gazebo_cmd = ExecuteProcess(
