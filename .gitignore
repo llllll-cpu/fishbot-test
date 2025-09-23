@@ -1,3 +1,18 @@
-build/**
-install/**
-log/**
+# colcon / ROS2
+build/
+install/
+log/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+.eggs/
+.pytest_cache/
+
+# Editors & OS
+.vscode/
+.idea/
+.DS_Store
